@@ -1,0 +1,364 @@
+/*Don't forget to use "Web Safe font" -> (Offline font)*/
+
+/*Order -> High to less important fonts*/
+
+/*Example : We want that every <h1> are in verdana font if the original web font cannot be loaded*/
+
+
+/* Font importation in local files*/
+@font-face{
+    src: url(Font/LibreBaskerville-Regular.ttf);
+    font-family : LibreBaskerville-Regular;
+}
+
+@font-face{
+    /* 1) Importation of the font */
+    src : url(Font/RobotoMono.ttf);
+
+    /* 2) Using of Font */
+    font-family : RobotoMono;
+
+}
+
+@font-face{
+    src : url(Font/HACKED.ttf);
+
+    font-family : HACKED;
+}
+                                /*Classes that are reutilizable for the entire website*/
+/*Call the font that we imported upper*/
+.fontRoboto{
+    font-family : RobotoMono;
+}
+
+.fontLibre{
+    font-family : LibreBaskerville-Regular;
+}
+
+.fontHack{
+    font-family : HACKED;
+}
+
+.margin{
+    margin : -10px;
+}
+
+.fontSize{
+    font-size : 1.2em;
+}
+
+.align{
+    text-align : center;
+}
+/*Center a GIF/Image*/
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*center text*/
+.center{
+    text-align : center;
+    background-color : black;
+}
+
+
+
+/* MAIN_MENU STYLE */
+
+#body_Main_Menu {
+    background-color:rgb(0, 0, 0);
+    background-image: url(Pictures/WatchDogs_Background.jpeg);
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+    color :white;
+
+    
+}
+
+
+/*Color used for the Matrix mode*/
+.greenColor {
+    color : rgb(16, 204, 16);
+}
+
+.greenColor a,
+.greenColor a:link,
+.greenColor a:visited{
+    color : rgb(16,204,16);
+}
+
+.whiteColor *{
+    color : white;
+}
+
+#title_main_menu {
+    font-size : 30px;
+}
+
+#Information_main_menu {
+    background-color : black;
+    text-align : center;
+    font-family: LibreBaskerville-Regular;
+}
+
+#Hypertext_Main_Menu{
+    font-size : 35px;
+}
+
+#Hypertext_Main_Menu:hover{
+    background-color :rgb(85, 85, 85);
+}
+
+#Hypertext_Main_Menu:not(hover){
+    background-color : black;
+}
+
+
+.Menu_Tag:hover{
+    background-color: rgb(0, 0, 0);
+    font-size : 1.1em;
+}
+
+
+.Menu_Link:visited{
+    color : white;
+}
+
+
+.Menu_Link:hover{
+    font-size:1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+                                    /* SOUNDTRACK */
+
+#bodySoundtrack {
+    background-image:url(Pictures/Background/wallpaper.jpg);
+    background-color : black;
+    color : white;
+}
+
+
+#Hypertext_Soundtrack a{
+    color : white;
+}
+
+#Hypertext_Soundtrack:hover a{
+    font-size:1.2em;
+}
+
+#Hypertext_Soundtrack:active a{
+    color : red;
+}
+
+#Hypertext_Soundtrack:visited a{
+    color : white;
+}
+
+
+
+
+
+
+
+                                    /* CHARACTERS PAGE */
+
+#body_Characters {
+    background-color : black;
+    color : rgb(255,255,255);
+    font-family : RobotoMono;
+}
+
+#hypertext_content li a:hover{
+    font-size : 1.2em;
+}
+#hypertext_content li a{
+    color : white;  
+}
+
+                            /*Keep them White*/
+#hypertext_content li a:visited{
+    color : white;
+}
+
+
+#back_menu{
+    color : white;
+}
+
+        /* hover means that when the cursor of the mouse is touching the text, things got updated
+                In this case, size of the font is getting bigger to do an animation */
+#back_menu:hover {
+    font-size : 1.2em;
+}
+
+/* When the Utilisator press the text with the mouse cursor, the color of the text is now in red */
+#back_menu:active{
+    color:red;
+}
+
+
+
+
+
+                                    /* TROPHY PAGE STYLE */
+
+
+#bronzeTrophy{
+    font-family : LibreBaskerville-Regular;
+    color : rgb(94, 67, 52);
+}
+
+#silverTrophy{
+    font-family : LibreBaskerville-Regular;
+    color : rgb(186, 185, 184);
+}
+
+#goldTrophy{
+    font-family : LibreBaskerville-Regular;
+    color : rgb(255,223,0);
+}
+
+p{
+    color : white;
+                    /*Georgia font is used if the LibreBasker font cannot be loaded*/
+    font-family : LibreBaskerville-Regular,Georgia;
+}
+
+pre{
+    color : white;
+    font-family : LivreBaskerville-Regular;
+}
+
+
+
+                            /* AMBROSE THEATRE (DOTCONNEXION) PAGE */
+
+#backCharacter:hover {
+    font-size : 1.2em;
+}
+
+
+
+#backCharacter:active {
+    color : red;
+}
+
+/* Don't work */
+#backCharacter:visited {
+    color : white;
+}
+
+
+/* deMarco Page */
+
+#BackDeMarco:hover{
+    font-size : 1.2em;
+}
+
+#BackDeMarco:active{
+    color : red;
+}
+#BackDeMarco:visited{
+    color : green;
+}
+
+#bodyDeMarco{
+    background-color: black;
+    color : white;
+}
+
+#colorPageDeMarco{
+    color : white;
+}
+
+/* Watch Dogs Trailer */
+
+#wdTrailer:hover{
+    font-size : 1.4em;
+}
+
+#wdTrailer:visited{
+    color : green;
+}
+
+/* No backspace on it and all will work */
+#wdTrailer:active{
+    color : red;
+}
+
+
+/* QUINN AUCTION PAGE */
+#bodyAuction{
+    color: white;
+    background-color : black;
+}
+
+#linkAuction:hover{
+    font-size : 1.2em;
+}
+
+#linkAuction:visited{
+    color : green;
+}
+
+#linkAuction:active{
+    color : red;
+}
+
+/* Poppy page */
+
+
+#poppyGraphism{
+    background-color : black;
+    color : white;
+}
+
+#poppyLink:visited{
+    color : green;
+}
+
+#poppyLink:hover{
+    font-size:1.2em;
+}
+
+#poppyLink:active{
+    color : red;
+}
+
+
+#dotConnexion p{
+    font-family : RobotoMono;
+}
+
+
+.important{
+    color : red;
+    font-size : 1.2em;
+    font-family : LibreBaskerville-Regular;
+}
+
+
+
+                                        /*AUDIO LOG PAGE*/
+.title_Audio{
+    font-size : 2em;
+}
+
+#body_Audio{
+    color : white;
+    background-color : black;
+}
+           
