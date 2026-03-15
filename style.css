@@ -2,8 +2,6 @@
 
 /*Order -> High to less important fonts*/
 
-/*Example : We want that every <h1> are in verdana font if the original web font cannot be loaded*/
-
 
 /* Font importation in local files*/
 @font-face{
@@ -25,7 +23,7 @@
 
     font-family : HACKED;
 }
-                                /*Classes that are reutilizable for the entire website*/
+                        /*Classes that are reutilizable for the entire website*/
 /*Call the font that we imported upper*/
 .fontRoboto{
     font-family : RobotoMono;
@@ -47,36 +45,59 @@
     font-size : 1.2em;
 }
 
-.align{
-    text-align : center;
-}
-/*Center a GIF/Image*/
-.centre {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-/*center text*/
+
+/*center text still useful ?*/
 .center{
     text-align : center;
     background-color : black;
 }
 
-
-
-/* MAIN_MENU STYLE */
-
-#body_Main_Menu {
-    background-color:rgb(0, 0, 0);
-    background-image: url(Pictures/WatchDogs_Background.jpeg);
-    background-repeat : no-repeat;
-    background-size : cover;
-    background-position : center;
-    color :white;
-
-    
+.centerHypertext{
+    text-align:center;
+    font-size : 20px;
 }
+
+body{
+    background-color:black;
+    background-image : url(Pictures/Background/mainBackground.jpg);
+    color :white;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-size:50px;
+    text-align : center;
+}
+
+h2{
+    font-size:35px;
+    text-align:center;
+}
+
+a{
+    color : white;
+}
+
+a:hover{
+    font-size:1.2em;
+}
+
+a:active{
+    color : red;
+}
+
+a:visited{
+    color :white;
+}
+
+
+                                    /* MAIN_MENU STYLE */
 
 
 /*Color used for the Matrix mode*/
@@ -94,9 +115,6 @@
     color : white;
 }
 
-#title_main_menu {
-    font-size : 30px;
-}
 
 #Information_main_menu {
     background-color : black;
@@ -104,15 +122,15 @@
     font-family: LibreBaskerville-Regular;
 }
 
-#Hypertext_Main_Menu{
+#HypertextMenu{
     font-size : 35px;
 }
 
-#Hypertext_Main_Menu:hover{
+#HypertextMenu:hover{
     background-color :rgb(85, 85, 85);
 }
 
-#Hypertext_Main_Menu:not(hover){
+#HypertextMenu:not(hover){
     background-color : black;
 }
 
@@ -122,15 +140,6 @@
     font-size : 1.1em;
 }
 
-
-.Menu_Link:visited{
-    color : white;
-}
-
-
-.Menu_Link:hover{
-    font-size:1.1em;
-}
 
 
 
@@ -143,77 +152,20 @@
 
 
                                     /* SOUNDTRACK */
-
-#bodySoundtrack {
-    background-image:url(Pictures/Background/wallpaper.jpg);
-    background-color : black;
-    color : white;
+#bodySoundtrack{
+    text-align: center; /*I may cheated on the look of this page*/
 }
 
+                                    /* CHARACTERS */
 
-#Hypertext_Soundtrack a{
-    color : white;
-}
-
-#Hypertext_Soundtrack:hover a{
-    font-size:1.2em;
-}
-
-#Hypertext_Soundtrack:active a{
-    color : red;
-}
-
-#Hypertext_Soundtrack:visited a{
-    color : white;
-}
-
-
-
-
-
-
-
-                                    /* CHARACTERS PAGE */
-
-#body_Characters {
-    background-color : black;
-    color : rgb(255,255,255);
+#bodyCharacters {
     font-family : RobotoMono;
-}
-
-#hypertext_content li a:hover{
-    font-size : 1.2em;
-}
-#hypertext_content li a{
-    color : white;  
-}
-
-                            /*Keep them White*/
-#hypertext_content li a:visited{
-    color : white;
-}
-
-
-#back_menu{
-    color : white;
-}
-
-        /* hover means that when the cursor of the mouse is touching the text, things got updated
-                In this case, size of the font is getting bigger to do an animation */
-#back_menu:hover {
-    font-size : 1.2em;
-}
-
-/* When the Utilisator press the text with the mouse cursor, the color of the text is now in red */
-#back_menu:active{
-    color:red;
+    text-align: center;
 }
 
 
 
-
-
-                                    /* TROPHY PAGE STYLE */
+                                    /* TROPHY GUIDE*/
 
 
 #bronzeTrophy{

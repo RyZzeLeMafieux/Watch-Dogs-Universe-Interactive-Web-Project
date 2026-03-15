@@ -2,10 +2,10 @@
 <!-- Video Bro code 2h35-->
 <html>
     <head>
-        <title>The Dot Connexion</title>
+        <title>The Dot ConneXion</title>
         <link rel = "stylesheet" href ="../style.css">
 
-        <!--Information about the website-->
+        <!--Informations about the website-->
         <meta name = "keywords" content = "HTML,WatchDogs,Wiki">
         <meta name = "description" content = "WatchDogs website which contains many 
                                                 detailed informations and easter-egg">
@@ -13,80 +13,51 @@
         <meta charset = "utf-8">
     </head>
 
-    <body id ="body_Main_Menu">
+    <body>
         <div id = "mainContainer">
             <header>
 
-                <h1 id = "title_main_menu" class = "align"><tt>_Welcome to Dot Connexion.</tt></h1>
+                <h1><tt>Welcome to Dot ConneXion</tt></h1>
                 <audio id = "merlaut" autoplay muted hidden loop src ="../Audio/mainMenu/merlautTheme.mp3"></audio>
 
 
-                <script> // The script is tiny so I put here
-
-                    // Add the music when the person click anywhere in the page
-                    document.addEventListener("click",function(e){
-                        const mainMenuMusic = document.getElementById("merlaut");
-                        mainMenuMusic.muted = false;
-                    })
-
-
-
-                    const color = document.getElementById("mainContainer");
-                    // Turn on/off the Matrix mode by pressing D
-                    //          DEV       -> Press D to try the Matrix mod Press D to put the classic mod
-                    document.addEventListener("keypress",function(e){
-                        
-                        if(e.code === "KeyD"){
-                            color.classList.toggle("greenColor"); //Add or remove the greenColor class
-
-                            // Add the choice of the user in the localStorage
-                            localStorage.setItem("matrixMod",color.classList.contains("greenColor")); // Return true or false
-                        }
-                    })
-
-                    // Put the last mode that the user had chosen
-                    if(localStorage.getItem("matrixMod") === "true"){
-                        color.classList.add("greenColor");
-                    }
-                    
+                <script src = "../mod.js">
                 </script>
             
         
             <img src = "../GIF/Reboot.gif"
-                alt = "Gif of the Watch Dogs Menu"
-                class = "centre">
+                alt = "Gif of the Watch Dogs Menu">
             </header>
-            <hr>
 
             <main>
             <h2 id ="Information_main_menu">This website was created to relate some information and help about Watch Dogs 1</h2>
             
-            <p id = "Information_main_menu">Press D to try the <span style = "color:rgb(16,204,16);">Matrix mod</span></p>
+            <p id = "Information_main_menu">Press D to set the <span style = "color:rgb(16,204,16);">Matrix mod</span></p>
 
-        <ul id = "Hypertext_Main_Menu">Menu :
+        <ul id = "HypertextMenu">Menu :
 
-            <li class = "Menu_Tag"> <a class ="Menu_Link" href ="soundtrack.html"
-            title ="Goes on the soudtrack of the game">Soundtrack</a> </li>
+            <li class = "Menu_Tag"> <a href ="soundtrack.html"
+            title ="Goes on the soudtrack">Soundtrack</a> </li>
 
-            <li class ="Menu_Tag"><a class ="Menu_Link" href ="characters.html"
-                title = "Goes on the characters of the game">Characters</a> 
+            <li class ="Menu_Tag"><a href ="characters.html"
+                title = "Goes on the characters">Characters</a> 
             </li>
 
-            <li class ="Menu_Tag"> <a class = "Menu_Link" href = "trophy.html"
-                title = "Goes on the Trophy guide page">Trophy Guide</a>
+            <li class ="Menu_Tag"> <a href = "trophy.html"
+                title = "Goes on the Trophy guide">Trophy Guide</a>
             </li>
 
 
-            <li class = "Menu_Tag"> <a class = "Menu_Link" href = "audioLog.html"
-                title = "Goes on the Audio Log Page">Audio Log</a>
+            <li class = "Menu_Tag"> <a href = "audioLog.html"
+                title = "Goes on the Audio Log">Audio Log</a>
             </li>
 
-            <li class = "Menu_Tag"> <a class = "Menu_Link" href = "place.html"
-                title = "Goes on the Places page">Place</a>
+            <li class = "Menu_Tag"> <a href = "place.html"
+                title = "Goes on the Places">Place</a>
             </li>
 
-            <li class = "Menu_Tag"> <a class = "Menu_Link" href = "mission.html"
-                title = "Goes on the Mission page">Mission</a>
+            <li class = "Menu_Tag"> <a href = "mission.html"
+                title = "Goes on the Mission">Mission</a>
             </li>
             
         </ul>
