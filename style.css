@@ -59,7 +59,7 @@
 
 .centerHypertext{
     text-align:center;
-    font-size : 20px;
+    font-size : 25px;
 }
 
 body{
@@ -163,13 +163,16 @@ li{
     text-align: center; /*I may cheated on the look of this page*/
 }
 
+
+
+
                                     /* CHARACTERS */
 
-#bodyCharacters {
+#bodyCharacters { /*Used also for the mission & place page*/
     font-family : RobotoMono;
 }
 
-.centerCharacters{
+.centerCharacters{ /* used also in the Place & trophy page*/
     text-align : center;
     list-style-position: inside;
     font-family : LibreBaskerville-Regular;
@@ -179,17 +182,17 @@ li{
                                     /* TROPHY GUIDE*/
 
 
-#bronzeTrophy{
+.bronzeTrophy{
     font-family : LibreBaskerville-Regular;
     color : rgb(94, 67, 52);
 }
 
-#silverTrophy{
+.silverTrophy{
     font-family : LibreBaskerville-Regular;
     color : rgb(186, 185, 184);
 }
 
-#goldTrophy{
+.goldTrophy{
     font-family : LibreBaskerville-Regular;
     color : rgb(255,223,0);
 }
@@ -207,121 +210,9 @@ pre{
 
 
 
-                            /* AMBROSE THEATRE (DOTCONNEXION) PAGE */
-
-#backCharacter:hover {
-    font-size : 1.2em;
-}
-
-
-
-#backCharacter:active {
-    color : red;
-}
-
-/* Don't work */
-#backCharacter:visited {
-    color : white;
-}
-
-
-/* deMarco Page */
-
-#BackDeMarco:hover{
-    font-size : 1.2em;
-}
-
-#BackDeMarco:active{
-    color : red;
-}
-#BackDeMarco:visited{
-    color : green;
-}
-
-#bodyDeMarco{
-    background-color: black;
-    color : white;
-}
-
-#colorPageDeMarco{
-    color : white;
-}
-
-/* Watch Dogs Trailer */
-
-#wdTrailer:hover{
-    font-size : 1.4em;
-}
-
-#wdTrailer:visited{
-    color : green;
-}
-
-/* No backspace on it and all will work */
-#wdTrailer:active{
-    color : red;
-}
-
-
-/* QUINN AUCTION PAGE */
-#bodyAuction{
-    color: white;
-    background-color : black;
-}
-
-#linkAuction:hover{
-    font-size : 1.2em;
-}
-
-#linkAuction:visited{
-    color : green;
-}
-
-#linkAuction:active{
-    color : red;
-}
-
-/* Poppy page */
-
-
-#poppyGraphism{
-    background-color : black;
-    color : white;
-}
-
-#poppyLink:visited{
-    color : green;
-}
-
-#poppyLink:hover{
-    font-size:1.2em;
-}
-
-#poppyLink:active{
-    color : red;
-}
-
-
-#dotConnexion p{
-    font-family : RobotoMono;
-}
-
-
+/* Location of this class ?*/
 .important{
     color : red;
     font-size : 1.2em;
     font-family : LibreBaskerville-Regular;
 }
-
-
-
-                                        /*AUDIO LOG PAGE*/
-.title_Audio{
-    font-size : 2em;
-}
-
-#body_Audio{
-    color : white;
-    background-color : black;
-}
-           
