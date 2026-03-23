@@ -41,10 +41,6 @@
     margin : -10px;
 }
 
-/* .fontSize{
-    font-size : 1.2em;
-} */
-
 
 /*center text still useful ?*/
 .center{
@@ -104,7 +100,7 @@ li{
     font-size : 1.2em;
 }
 
-                                    /* MAIN_MENU STYLE */
+                                    /* MAIN_MENU */
 
 
 /*Color used for the Matrix mode*/
@@ -122,6 +118,36 @@ li{
     color : white;
 }
 
+/* Overlay plein écran */
+#introOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.8); /*Opacity*/
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    cursor: pointer; /*Changes into the hand cursor*/
+
+    z-index: 9999; /*High priority (passe au-dessus de TOUT)*/
+    transition: opacity 0.2s ease; /*useless*/
+}
+
+#mainContainer{
+    transition: filter 1.5s ease;
+}
+
+/* Flou du site derrière */
+#mainContainer.blur {
+    filter: blur(8px);
+}
 
 #Information_main_menu {
     background-color : black;
