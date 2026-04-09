@@ -216,7 +216,7 @@ pre{
     font-family : LibreBaskerville-Regular;
 }
 
-.borderCharacters{
+.borderCharacters{ /* Used for paragraph description*/
     border-style : solid;
     border-width : 2.5px;
     border-color:white;
@@ -227,7 +227,7 @@ pre{
     margin-right : 250px;
 }
 
-.borderCharactersLI{
+.borderCharactersLI{ /*Used for <li>*/
     border-style : solid;
     border-width : 2.5px;
     border-color:white;
@@ -244,15 +244,46 @@ pre{
 .bronzeTrophy{
     font-family : LibreBaskerville-Regular;
     color : rgb(94, 67, 52);
+    background-color:black;
+    border:3px solid rgb(94,67,52);
+    padding:10px;
+    display:inline-table;
 }
 
 .silverTrophy{
     font-family : LibreBaskerville-Regular;
     color : rgb(186, 185, 184);
+    background-color:black;
+    border:3px solid rgb(186,185,184);
+    padding:10px;
+    display:inline-table;
 }
 
 .goldTrophy{
     font-family : LibreBaskerville-Regular;
     color : rgb(255,223,0);
+    background-color:black;
+    border:3px solid rgb(255,223,0);
+    padding:10px;
+    display:inline-table;
 }
 
+.borderTrophy{
+    border-style : solid;
+    border-width : 2.5px;
+    border-color:white;
+    background-color : black;
+
+    display:inline-table;
+    margin-right:250px;
+    margin-left:250px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+                            /*AUDIO LOG*/
+.titleAudio{
+    font-size : 2em;
+}
